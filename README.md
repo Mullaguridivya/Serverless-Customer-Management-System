@@ -45,6 +45,9 @@ This project implements a fully serverless customer management system using AWS 
 ```text
 Serverless-Customer-Management-System/
 │
+├──architecture/
+│   └── architecture.png
+│
 ├── frontend/
 │   ├── index.html
 │   ├── style.css
@@ -53,12 +56,9 @@ Serverless-Customer-Management-System/
 ├── lambda/
 │   └── lambda_function.py
 │
-├── architecture/
-│   └── architecture.png
-│
 ├── screenshots/
 │   └── application-ui.png
 │
-├── README.md
-└── .gitignore
+├── .gitignore
+└── README.md
 ```
