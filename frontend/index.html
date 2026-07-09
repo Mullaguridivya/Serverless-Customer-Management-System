@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Customer Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Customer Management System</h1>
+
+<div class="card">
+
+<h2>Add Customer</h2>
+
+<input type="text" id="customerId" placeholder="Customer ID">
+
+<input type="text" id="customerName" placeholder="Customer Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="text" id="phone" placeholder="Phone">
+
+<input type="text" id="city" placeholder="City">
+
+<button onclick="addCustomer()">Add Customer</button>
+
+<p id="addMessage"></p>
+
+</div>
+
+<div class="card">
+
+<h2>Search Customer</h2>
+
+<input type="text" id="searchId" placeholder="Enter Customer ID">
+
+<button onclick="searchCustomer()">Search</button>
+
+<div id="result"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
