@@ -12,6 +12,16 @@ This project implements a fully serverless customer management system using AWS 
 
 ---
 
+## 🏗 AWS Architecture
+
+The application follows a serverless architecture where users interact with a responsive web interface built using HTML, CSS, and JavaScript. Customer requests are sent to Amazon API Gateway REST APIs, which invoke AWS Lambda to process the application logic. AWS Lambda stores and retrieves customer information from Amazon DynamoDB, while AWS IAM provides secure access between AWS services and Amazon CloudWatch captures logs for monitoring and troubleshooting.
+
+<p align="center">
+  <img src="architecture/architecture.png" alt="Serverless Customer Management System Architecture" width="900">
+</p>
+
+---
+
 ## ✨ Features
 
 - Add new customer records
@@ -26,17 +36,30 @@ This project implements a fully serverless customer management system using AWS 
 
 ---
 
-## 🛠 Technologies Used
+## 🛠 Technical Stack
 
+### Cloud Services
 - AWS Lambda
 - Amazon API Gateway (REST API)
 - Amazon DynamoDB
 - AWS IAM
 - Amazon CloudWatch
+
+### Frontend
 - HTML5
 - CSS3
 - JavaScript
-- Python (Boto3)
+
+### Backend
+- Python
+- Boto3 (AWS SDK for Python)
+
+### Development & Version control
+- Git
+- GitHub
+
+### API Testing
+- Postman
 
 ---
 
@@ -59,6 +82,53 @@ Serverless-Customer-Management-System/
 ├── screenshots/
 │   └── application-ui.png
 │
+
 ├── .gitignore
 └── README.md
 ```
+---
+
+## ⚙️ Application Workflow
+
+1. The user accesses the web application through the browser.
+2. The frontend (HTML, CSS, and JavaScript) collects customer information or a Customer ID.
+3. The request is sent to Amazon API Gateway using REST APIs.
+4. Amazon API Gateway invokes the AWS Lambda function.
+5. AWS Lambda processes the request and performs the required database operation.
+6. Customer records are stored in or retrieved from Amazon DynamoDB.
+7. The Lambda function returns the response through API Gateway.
+8. The frontend displays the result to the user.
+
+---
+
+## 📷 Application Screenshot
+
+The screenshot below shows the web interface used to add and search customer records. The application communicates with Amazon API Gateway REST APIs, which invoke AWS Lambda functions to process requests and interact with Amazon DynamoDB for data storage and retrieval
+
+<p align="center">
+  <img src="screenshots/application-ui.png" alt="Serverless Customer Management System UI" width="850">
+</p>
+
+----
+
+## 🚀 Future Enhancements
+
+- Implement Update and Delete operations to support complete CRUD functionality.
+- Add user authentication and authorization using Amazon Cognito.
+- Enhance input validation and error handling for improved reliability.
+- Deploy the frontend using Amazon S3 and Amazon CloudFront for public hosting.
+- Automate infrastructure deployment using AWS CloudFormation.
+- Implement CI/CD pipelines for automated testing and deployment.
+
+
+---
+
+## 👩‍💻 Author
+
+**Mullaguri Divya**
+
+- LinkedIn: https://www.linkedin.com/in/mullaguri-divya
+- GitHub: https://github.com/Mullaguridivya
+
+If you found this project helpful or have suggestions for improvement, feel free to connect with me.
+
